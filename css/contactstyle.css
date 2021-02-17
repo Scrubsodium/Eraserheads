@@ -176,7 +176,7 @@ body {
   background-color: #ffffff;
 }
 .header{
-  background-image: url(./images/header.jpg); 
+  background-image: url(/images/header.jpg); 
   height: 84.9vh; 
   background-size: cover;
 }
