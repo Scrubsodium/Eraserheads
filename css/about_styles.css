@@ -226,17 +226,6 @@ footer .footercontainer.sec.aboutus,.quicklinks, .contact{
 }
 /*Footer CSS End*/
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-   h1{
-       text-align: left;
-       margin-left: 120px;
-       padding: 25px;
-   }
    p{
     text-align: left;
     margin-left: 148px;

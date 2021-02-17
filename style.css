@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 body {
-    background-color: #f0efef;
+    background-color: #000000;
     padding: 0;
     margin: 0;
     
@@ -16,16 +16,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-
-  h1{
-    text-align: center;
-    letter-spacing: 5px;
-    font-weight: 500;
-    font-size: 70px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    color: rgb(0, 0, 0);
   }
   
   .navcontainer {
@@ -167,28 +157,28 @@ footer{
   box-shadow: 0 0 10px 0;
   margin-top: 0px;
   cursor: default;
-}
-footer .footercontainer{
+  }
+  footer .footercontainer{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-}
-footer .footercontainer .sec{
+  }
+  footer .footercontainer .sec{
   margin-right: 30px;
-}
-footer .footercontainer .sec.aboutus{
+  }
+  footer .footercontainer .sec.aboutus{
   width: 40%;
-}
-footer .footercontainer h2{
+  }
+  footer .footercontainer h2{
   position: relative;
   color: #fff;
   font-family: 'Exo 2', sans-serif;
   font-weight: 900;
   margin-bottom: 15px;
-
-}
-footer .footercontainer h2:before{
+  
+  }
+  footer .footercontainer h2:before{
   content: '';
   position: absolute;
   bottom: -5px;
@@ -196,19 +186,19 @@ footer .footercontainer h2:before{
   width: 50px;
   height: 2px;
   background: rgb(255, 39, 103);
-}
-footer p{
+  }
+  footer p{
   color: #999;
-}
-
-.copyright{
+  }
+  
+  .copyright{
   width: 100%;
   background: #181818;
   padding: 8px 100px;
   text-align: center;
   color: #999;
-}
-@media (max-width: 991px){
+  }
+  @media (max-width: 991px){
   footer{
       padding: 40px;
   }
@@ -225,8 +215,8 @@ footer p{
   .copyright{
       padding: 8px 40px;
   }
-}
-/*Footer CSS End*/
+  }
+  /*Footer CSS End*/
   
 
   .icons{
@@ -359,6 +349,34 @@ footer p{
     cursor: pointer;
   }
 
+  .musika,
+  .musiko,
+  .musiki,
+  .musike {
+    color: #ffffff;
+    float: none;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .musika p,
+  .musiko p,
+  .musiki p,
+  .musike p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+
+  }
+
+  #playe,
+  #playa,
+  #playi,
+  #playii {
+    width: 80px;
+    cursor: pointer;
+  }
 
   
 
@@ -366,21 +384,31 @@ footer p{
   h2 {
     text-align: center;
     letter-spacing: 5px;
-    color: #222222;
     font-weight: 500;
     font-size: 70px;
     cursor: pointer;
   }
+
+  h3 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 200;
+    font-size: 30px;
+    cursor: pointer;
+  }
   
-  h2 span {
+  h2 span,
+  h3 span {
     transition: 0.5s;
   }
   
-  h2:hover span:nth-child(1) {
+  h2:hover span:nth-child(1),
+  h3:hover span:nth-child(1){
     margin-right: 10px;
   }
   
-  h2:hover span:nth-child(2) {
+  h2:hover span:nth-child(2),
+  h3:hover span:nth-child(2) {
     margin-left: 20px;
   }
   
@@ -392,3 +420,67 @@ footer p{
                  0 0 120px #ffffff,
                  0 0 160px #ffffff;
   }
+
+  h3:hover span {
+    color: #ffffff;
+    text-shadow: 0 0 10px #a6d329,
+                 0 0 20px #a6d329,
+                 0 0 40px #a6d329,
+                 0 0 120px #a6d329,
+                 0 0 160px #a6d329;
+  }
+
+  .card-title {
+    color: #ffffff;
+  	font-size: 30px;
+    text-align: center;
+  }
+
+  .card-img-top {
+    width: 600px; height: 500px; display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  p {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .card-body {
+    text-align: center;
+    font-family: arial;
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+
+
+  .container{
+		width: 90%;
+		padding: 20px;
+		margin: 10px auto;	 
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+
+	.box{
+		width: 250px;
+		margin: 0 10px;
+		box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+		transition: 1s;
+
+	}
+	.box img{
+		display: block;
+		width:100%;
+		border-radius: 5px;
+	}
+	.box:hover{
+		transform: scale(1.3);
+		z-index: 2;
+	}
