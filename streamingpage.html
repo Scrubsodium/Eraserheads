@@ -7,7 +7,7 @@
     
     <title>Streaming Page</title>
 
-    <link href = "style.css" rel = "stylesheet">
+    <link href = "./style.css" rel = "stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -106,12 +106,12 @@
 
         <div class="music">
             <p>Click Here To Listen</br>  </p>
-            <img src="images/play1.png" id="play">
+            <img src="./images/play1.png" id="play">
         </div>
 
         <audio id = "mysong">
 
-            <source src = "images/Overdrive.mp3" type="audio/mp3">
+            <source src = "./images/Overdrive.mp3" type="audio/mp3">
 
         </audio>
 
@@ -122,20 +122,19 @@
         play.onclick = function(){
             if(mysong.paused){
                 mysong.play();
-                play.src = "images/pause1.png";
+                play.src = "./images/pause1.png";
             }
             else {
                 mysong.pause();
-                play.src = "images/play1.png";
+                play.src = "./images/play1.png";
             }
         }
         </script>
+  </div>  
+</body>
 <footer>
 </footer>
 <div class="copyright">
 	<p>Copyright © 2021 Eraserheads. All Rights Reserved</p>
 </div>
-
-
-</body>
 </html>
