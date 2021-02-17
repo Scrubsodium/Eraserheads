@@ -1,39 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Home Page</title>
+        <!--CSS link-->
+        <link href = "css/contactstyle.css" rel = "stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <link href = "style.css" rel = "stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
-    
-</head>
-<body>
+        <!--Fonts link-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&family=Dosis:wght@200&family=Exo+2:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
 
-    <div id = "main">
-        <div class ="navcontainer">
-            <div class="nav" style=" font-family: 'Poppins', sans-serif;">
-                <ul>
-                    <li class="logo"><img src="images/logo.jpg"></li>
-                    <li><a href = "index.html" target="_self";  class="btn1" style = "color: #c50707;"><span>Home</span></a></li>
-                    <li><a href = "aboutpage.html" target="_self"; class="btn2" style = "color: #20bb12;"><span>The Band</span></a></li>
-                    <li><a href = "albumpage.html" target="_self"; class="btn3" style = "color:#1f0774;"><span>Albums</span></a></li>
-                    <li><a href = "streamingpage.html" target="_self"; class="btn4" style = "color:#c50707;"><span>Stream</span></a></li>
-                    <li><a href = "contactpage.html" target="_self"; class="btn5" style = "color:#20bb12;"><span>Sign Up</span></a></li>
-                    <li><a href = "developerspage.html" target="_self"; class="btn6" style = "color:#1f0774;"><span>About Us</span></a></li>
-                    <li><a href="http://www.eraserheads.ph/" class="creditsbtn" style = "color:#000000;"><span>Credits</span></a></li>
-                </ul>
+
+        <!--Bootstrap links-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+        <div id = "main">
+
+            <!--Navigation bar Start-->
+            <div class ="navcontainer">
+                <div class="nav" style=" font-family: 'Poppins', sans-serif;">
+
+                    <div class="logo"><img src="images/logo.png"></div>
+                    
+                    <ul>
+                        <li><a href = "index.html" target="_self";  class="btn1" style = "color: #c50707;"><span>Home</span></a></li>
+                        <li><a href = "aboutpage.html" target="_self"; class="btn2" style = "color: #20bb12;"><span>The Band</span></a></li>
+                        <li><a href = "albumpage.html" target="_self"; class="btn3" style = "color:#1f0774;"><span>Albums</span></a></li>
+                        <li><a href = "streamingpage.html" target="_self"; class="btn4" style = "color:#c50707;"><span>Stream</span></a></li>
+                        <li><a href = "contactpage.html" target="_self"; class="btn5" style = "color:#20bb12;"><span>Sign Up</span></a></li>
+                        <li><a href = "developerspage.html" target="_self"; class="btn6" style = "color:#1f0774;"><span>About Us</span></a></li>
+                        <li><a href="http://www.eraserheads.ph/" class="creditsbtn" style = "color:#000000;" target="_blank"><span>Credits</span></a></li>
+                    </ul>
+
+                </div>
             </div>
+            <!--Navigation bar End-->
+
         </div>
-    </div>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="js/bootstrap.js"></script>
-</body>
+
+
+        <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+        <script>
+          $(document).ready(function() {
+          $(window).scroll(function() {
+          if ($(this).scrollTop() > 20) {
+          $('#toTopBtn').fadeIn();
+          } else {
+          $('#toTopBtn').fadeOut();
+          }
+          });
+
+          $('#toTopBtn').click(function() {
+          $("html, body").animate({
+          scrollTop: 0
+          }, 1000);
+          return false;
+          });
+          });
+        </script>
+        <div class="backdrop">
+
+          <div class="wrapper">
+
+              <div class="header">
+                  <div class="outer">
+
+
+                    <div class="container">
+
+                      <div class="row upper">
+
+                        <div class="col-6 align-self-center" style="text-align: center;">
+
+                          <i class="fa fa-comments-o" aria-hidden="true"></i><br>
+                          <h1>Send Us a Message! <br> Ask us any questions!</h1><br>
+                          <a href="#contactus"><span>Contact Us</span></a>
+                          
+
+                        </div>
+
+                        <div class="col-6 align-self-center" style="text-align: center;">
+                          
+                          
+                          <i class="fa fa-user-plus" aria-hidden="true"></i><br>
+                          <h1>Join The Family! <br> Sign Up in the Fandom!</h1><br>
+                          <a href="#signup">
+                          <span>Sign Up</span></a>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+              </div>
+              
+          </div>
+
+          <script src="https://use.fontawesome.com/42355aecf5.js"></script>
+
+          <a id="signup"></a>
+          <div class="signup">
+            <div class="container">
+
+                <div class="row outside">
+
+
+                  <div class="col align-self-center">
+                  </div>
+
+                  
+                  <div class="col-6 align-self-center" style="border: 2px solid rgb(8, 8, 8); padding: 20px; border-radius: 20px;">
+                    <div class="red" style="border: 2px solid rgb(255, 1, 1); padding: 20px; border-radius: 10px;">
+                    <div class="green" style="border: 2px solid rgb(30, 255, 0); padding: 20px; border-radius: 10px;">
+                    <div class="blue" style="border: 2px solid rgb(0, 17, 255); padding: 20px; border-radius: 10px;">
+                      
+                      <form>
+
+                          <h1>Sign Up!</h1>
+
+                          <div class="row">
+                            <div class="col">
+                              <label for="firstname" class="form-label">First Name</label>
+                              <input type="text" class="form-control" placeholder="Input Your First name" id="firstname">
+                            </div>
+
+                            <div class="col">
+                              <label for="firstname" class="form-label">Last Name</label>
+                              <input type="text" class="form-control" placeholder="Input Your Last name" id="lastname">
+                            </div>
+                          </div>
+                          <br>
+                          <div class="col">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Input Your Email">
+                          </div>
+
+                          <div class="col">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Input Your personal Password">
+                          </div>
+
+                          <div class="col">
+                            <label for="bday" class="form-label">Birthday</label>
+                            <input type="text" class="form-control" id="bday" placeholder="Input Your Birthday">
+                          </div><br>
+                          
+                          <div class="row">
+                            <div class="col" style="margin-left: 20px;">
+                              <label for="gender" class="form-label">Gender</label><br>
+                              <select name="gender" id="gender">
+                                <option value="empty"></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                              </select>
+                            </div>
+                            <div class="col">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </div>
+                          
+                      </form>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col align-self-center">
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <a id="contactus"></a>
+          <div class="contactus">
+            <div class="container">
+              <div class="col">
+
+              </div>
+                <div class="row outside">
+
+
+                  <div class="col align-self-center">
+                  </div>
+
+                  
+                  <div class="col-6 align-self-center" style="border: 2px solid rgb(8, 8, 8); padding: 20px; border-radius: 20px;">
+                    <div class="red" style="border: 2px solid rgb(255, 1, 1); padding: 20px; border-radius: 20px;">
+                    <div class="green" style="border: 2px solid rgb(30, 255, 0); padding: 20px; border-radius: 20px;">
+                    <div class="blue" style="border: 2px solid rgb(0, 17, 255); padding: 20px; border-radius: 20px;">
+                      
+                      <form>
+
+                          <h1>Contact Us!</h1>
+
+                          <div class="col">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Input Your Full Name" id="fullname" required>
+                          </div>
+                          <br>
+                          <div class="col">
+                            <label for="inputEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Input Your Email" required>
+                          </div>
+                          <br>
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Example textarea</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                          </div>
+
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col align-self-center">
+                  </div>
+
+
+
+                </div>
+            </div>
+          </div>
+          
+
+
+
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        </div>
+
+
+
+    </body>
 </html>
